@@ -16,6 +16,8 @@ import {
 
 import { CgFileDocument } from "react-icons/cg";
 
+import pdf from "../../Assets/../src/Assets/EbenezerKAcquah-CompleteResume-24.pdf";
+
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
@@ -58,20 +60,18 @@ function NavBar() {
                 <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
               </Nav.Link>
             </Nav.Item>
-        <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/about"
-                onClick={() => updateExpanded(false)}
-              >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> Skills
-              </Nav.Link>
-            </Nav.Item>
+            <Nav.Item>
+  <Nav.Link
+    href="#skills"
+    onClick={() => updateExpanded(false)}
+  >
+    <AiOutlineUser style={{ marginBottom: "2px" }} /> Skills
+  </Nav.Link>
+</Nav.Item>
 
             <Nav.Item>
               <Nav.Link
-                as={Link}
-                to="/project"
+                href="#projects"
                 onClick={() => updateExpanded(false)}
               >
                 <AiOutlineFundProjectionScreen
@@ -83,8 +83,9 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
-                as={Link}
-                to="/resume"
+                href={pdf}
+                download="Soumyajit_Behera-BIT_MESRA.pdf" // This will prompt the download
+                target="_blank"
                 onClick={() => updateExpanded(false)}
               >
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume

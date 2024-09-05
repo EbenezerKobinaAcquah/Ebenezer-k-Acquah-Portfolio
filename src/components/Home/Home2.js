@@ -22,8 +22,8 @@ import Projects from "./Projects/Projects";
 
 function Techstack() {
   return (
-    <div className="my-parent-container">
-      <h1 className="project-heading">
+    <div className="my-parent-container " id="skills">
+      <h1 className="project-heading margin-bottoms" >
           Professional <strong className="purple">Skillset </strong>
         </h1>
     <Row style={{ justifyContent: "center", paddingBottom: "50px",  color: "white"}}>
@@ -70,7 +70,7 @@ function Techstack() {
         <DiJava />
       </Col>
     </Row>
-<div className="btn-custom">
+<div className="btn-custom" id="projects">
     <Projects />
     </div>
     </div>
