@@ -46,7 +46,19 @@ function Projects() {
               // demoLink="https://github.com/EbenezerKobinaAcquah/chatgpt-chrome-extension"
             />
           </Col>
-
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={editor}
+              isBlog={false}
+              title="Password Manager"
+              description="Developed a robust password management system with JSON-based permanent storage, implementing
+AES-256 encryption to ensure data integrity and user privacy.
+ Built a time-efficient search engine using HashMaps / dictionaries and an in-built password generator
+ Provided auto-fill and used the pyperclip library to automatically copy generated password to clipboard"
+              ghLink="https://github.com/EbenezerKobinaAcquah/Password-Project"
+              // demoLink="https://github.com/EbenezerKobinaAcquah/Password-Project"              
+            />
+          </Col>
           
 
           <Col md={4} className="project-card">
@@ -62,19 +74,7 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={editor}
-              isBlog={false}
-              title="Password Manager"
-              description="Developed a robust password management system with JSON-based permanent storage, implementing
-AES-256 encryption to ensure data integrity and user privacy.
- Built a time-efficient search engine using HashMaps / dictionaries and an in-built password generator
- Provided auto-fill and used the pyperclip library to automatically copy generated password to clipboard"
-              ghLink="https://github.com/EbenezerKobinaAcquah/Password-Project"
-              // demoLink="https://github.com/EbenezerKobinaAcquah/Password-Project"              
-            />
-          </Col>
+          
 
           <Col md={4} className="project-card">
             <ProjectCard
