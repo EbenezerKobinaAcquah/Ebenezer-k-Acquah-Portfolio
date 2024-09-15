@@ -39,7 +39,7 @@ function Home() {
           className="btn-custom"
           variant="primary"
           href={pdf}
-          download="Soumyajit_Behera-BIT_MESRA.pdf" // This will prompt the download
+          download="EbenezerKAcquah-CompleteResume-24.pdf" // This will prompt the download
           target="_blank"
           style={{ maxWidth: "250px" }}
         >
