@@ -8,6 +8,11 @@ import editor from "../../../Assets/Projects/codeEditor.png";
 import chatify from "../../../Assets/Projects/chatify.png";
 import suicide from "../../../Assets/Projects/suicide.png";
 import bitsOfCode from "../../../Assets/Projects/blog.png";
+import aboakyer from "../../../Assets/Projects/aboakyer.png"
+import chrome from "../../../Assets/Projects/chrome-extension.png"
+import portfolio from "../../../Assets/Projects/portfolio.png"
+import PhotoFolio from "../../../Assets/Projects/photofolio.png"
+import recommender from "../../../Assets/Projects/Learningpic.jpg"
 
 function Projects() {
   return (
@@ -18,26 +23,42 @@ function Projects() {
           Recent <strong className="purple">Projects </strong>
         </h1>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          
+
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={recommender}
               isBlog={false}
-              title="ChatGPT Chrome Extension"
-              description="A cahtgpt chrome extension that enables editing in every textbox on the web. You don't need to copy your text to chatgpt.com for fine-tuning, 
-              every thing can be done where you're currently typing. Interacting with OpenAI API everywhere on the internet. This is some cool stuff right here"
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="Learning Resource Recommender"
+              description="Developed an AI-powered application using Beautiful Soup to curate the top 5 free, highly rated online learning resources, benefiting 100+ underprivileged students by reducing course selection time by 70%. Future updates include a reward system where students earn stars for completing courses, redeemable for scholarships toward paid courses. Open to partnerships for expanding scholarship opportunities"
+              ghLink="https://github.com/EbenezerKobinaAcquah/AI-Learning-Recommender"
+              demoLink="https://learning-resource-recommender.vercel.app/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={chrome}
               isBlog={false}
-              title="Learning Resource Recommender"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="ChatGPT Chrome Extension"
+              description="A cahtgpt chrome extension that integrates OpenAI’s API into every text box on the web, allowing you to edit and fine-tune your writing without needing to visit the ChatGPT website. Whether you're drafting tweets, revising emails, fixing code, you can do it seamlessly within the platform. It supports real-time editing directly where you're typing and includes a plugin system, offering additional control to interact with third-party APIs for enhanced functionality."
+              ghLink="https://github.com/EbenezerKobinaAcquah/chatgpt-chrome-extension"
+              // demoLink="https://github.com/EbenezerKobinaAcquah/chatgpt-chrome-extension"
+            />
+          </Col>
+
+          
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={aboakyer}
+              isBlog={false}
+              title="Aboakyer-Online"
+              description="A comprehensive website designed to augment the Aboakyer festival of the people of Winneba in central Ghana. 
+              It provides media updates through videos and pictures of the currents events of the festival for those not currently in Ghana. 
+              Integrated hostel and lodge platforms to search for accomodation if you wish to come for the festival."
+              ghLink="https://github.com/EbenezerKobinaAcquah/Aboakyer-Online"
+              demoLink="https://ebenezerkobinaacquah.github.io/Aboakyer-Online/"
             />
           </Col>
 
@@ -46,43 +67,36 @@ function Projects() {
               imgPath={editor}
               isBlog={false}
               title="Password Manager"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              description="Developed a robust password management system with JSON-based permanent storage, implementing
+AES-256 encryption to ensure data integrity and user privacy.
+ Built a time-efficient search engine using HashMaps / dictionaries and an in-built password generator
+ Provided auto-fill and used the pyperclip library to automatically copy generated password to clipboard"
+              ghLink="https://github.com/EbenezerKobinaAcquah/Password-Project"
+              // demoLink="https://github.com/EbenezerKobinaAcquah/Password-Project"              
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={PhotoFolio}
               isBlog={false}
-              title="Aboakyer-Online"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="PhotoFolio"
+              description="A Photofolio website for showcasing pictures of the natural world and also take pictures of the polluted water bodies in my community. 
+              I satirically showcase these photos to lead sustainability activism on social media #PoisonedForGold. I am also happy to capture other people's happy moments."
+              ghLink="https://github.com/EbenezerKobinaAcquah/PoisonedForGold"
+              demoLink="https://ebenezerkobinaacquah.github.io/PoisonedForGold/index.html"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={portfolio}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              title="Portfolio Website"
+              description="A personal portfolio website built using HTML, CSS, and JavaScript to showcase my skills, experiences, and projects. The site features project 
+              cards with brief descriptions and includes my resume, and skillset. It was designed with React, Tailwind CSS, and Material UI for a visually appealing and responsive layout."
+              ghLink="https://github.com/EbenezerKobinaAcquah/Ebenezer-k-Acquah-Portfolio"
+              demoLink="https://ebenezer-k-acquah-portfolio.vercel.app/"
             />
           </Col>
         </Row>
