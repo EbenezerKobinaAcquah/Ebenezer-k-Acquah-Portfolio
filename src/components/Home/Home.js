@@ -7,7 +7,7 @@ import Type from "./Type";
 
 import Button from "react-bootstrap/Button";
 
-import pdf from "../../Assets/../Assets/EbenezerKAcquah-CompleteResume-24.pdf";
+import pdf from "../../Assets/../Assets/EKA_Final_resume_24.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
@@ -39,7 +39,7 @@ function Home() {
           className="btn-custom"
           variant="primary"
           href={pdf}
-          download="EbenezerKAcquah-CompleteResume-24.pdf" // This will prompt the download
+          download="EKA_Final_resume_24.pdf" // This will prompt the download
           target="_blank"
           style={{ maxWidth: "250px" }}
         >

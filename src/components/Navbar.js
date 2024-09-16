@@ -16,7 +16,7 @@ import {
 
 import { CgFileDocument } from "react-icons/cg";
 
-import pdf from "../../Assets/../src/Assets/EbenezerKAcquah-CompleteResume-24.pdf";
+import pdf from "../../Assets/../src/Assets/EKA_Final_resume_24.pdf";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
